@@ -1,0 +1,15 @@
+.logButton {
+  background-color: azure;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  border-color: ghostwhite;
+  border-style: ridge;
+}
+
+.login-group {
+  position: relative;
+  text-align: center;
+}

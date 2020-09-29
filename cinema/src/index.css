@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.currButton {
+  background-color: aquamarine;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  border-color: darkcyan;
+  border-style: solid;
+
+}
+
+.otherButton {
+  background-color: aquamarine;
+  color: indigo;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  border-color: darkcyan;
+  border-style: ridge;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
