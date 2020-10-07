@@ -1,4 +1,4 @@
-const express = require ('./node_modules/express');
+const express = require ('express');
 const app = express();
 const cors = require("./node_modules/cors/lib");
 const pool = require ("./db");
@@ -10,6 +10,10 @@ app.use(express.json()); //req.body
 
 //USER LOG IN AND REGISTRATION //
 
+//ROUTES//
+
+//register and login routes
+app.use ("/auth", require("./routes/jwtAuth"));
 
 
 
