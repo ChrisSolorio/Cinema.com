@@ -15,6 +15,9 @@ app.use(express.json()); //req.body
 //register and login routes
 app.use ("/auth", require("./routes/jwtAuth"));
 
+//dashboard route
+app.use ("/dashboard", require("./routes/dashboard") );
+
 
 
 // MAIN DATABASE ROUTES //
@@ -40,6 +43,17 @@ app.post("/create", async(req,res)=>{
 app.get("/create", async (req,res) => {
     try {
        const allTodos = await pool.query ("SELECT * FROM movielist");
+       res.json (allTodos.rows); 
+    } catch (error) {
+        console.error(error.message);  
+    }
+});
+
+//GET FROM USERS LIBRARY
+app.get("/create/user_email", async (req,res) => {
+    try {
+       const allTodos = await pool.query ("SELECT * FROM movielist WHERE user_email = $1",
+       [user_email]);
        res.json (allTodos.rows); 
     } catch (error) {
         console.error(error.message);  
